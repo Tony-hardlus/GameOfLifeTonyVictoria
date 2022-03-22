@@ -55,7 +55,8 @@ def draw():
     step()
     clear()
     for (x, y), alive in cells.items():
-        color = 'yellow' if alive else 'black'
+        """Se cambió el color a azul"""
+        color = 'blue' if alive else 'black'
         square(x, y, 10, color)
     update()
     ontimer(draw, 100)
